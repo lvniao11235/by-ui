@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我的支部</title>
+	<link rel="stylesheet" href="css/by-ui.css">
+	<link rel="stylesheet" href="css/carrousel.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="by-ui" style="background-color:white">
+	<div class="by-sign">
+		<div class="by-sign-name" style="margin-top:0px;">
+			<span class="by-sign-label">姓名</span>
+			<input type="text" placeholder="请输入姓名"/>
+		</div>
+		<div class="by-sign-phone">
+			<span class="by-sign-label">电话号码</span>
+			<input type="text" placeholder="请输入电话"/>
+		</div>
+		<div class="by-sign-phone">
+			<span class="by-sign-label">社区</span>
+			<input type="text" placeholder="寻找我的社区"/>
+		</div>
+		<div class="by-sign-phone">
+			<span class="by-sign-label">上级社区</span>
+		</div>
+		<div class="by-speciality">
+			<div class="by-speciality-title">特长</div>
+			<div class="by-speciality-list">
+				<div class="by-speciality-item">政策解读</div>
+				<div class="by-speciality-item">理论研究</div>
+				<div class="by-speciality-item">法律维权</div>
+				<div class="by-speciality-item">心里疏导</div>
+				<div class="by-speciality-item">教育咨询</div>
+				<div class="by-speciality-item">医疗服务</div>
+				<div class="by-speciality-item">环境保护</div>
+				<div class="by-speciality-item">物业维修</div>
+			</div>
+		</div>
+	</div>
+	<div class="by-bottom">
+		<div class="by-bottom-return">&lt 返回</div>
+		<div class="by-bottom-save">
+			<span class="fa-stack" style="margin-right:10px;">
+				<i class="fa fa-circle-thin fa-stack-2x"></i>
+				<i class="fa fa-check fa-stack-1x"></i>
+			</span>保存
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/by-ui.js"></script>
+	<script src="js/carrousel.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		$(function(){
+			$(".by-bottom-return").click(function(){
+				window.history.back();
+			});
+			$(".by-speciality-item").click(function(){
+				if($(this).hasClass("selected")){
+					$(this).removeClass("selected");
+				} else {
+					$(this).addClass("selected");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

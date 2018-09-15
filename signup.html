@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>报名信息</title>
+	<link rel="stylesheet" href="css/by-ui.css">
+	<link rel="stylesheet" href="css/carrousel.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="by-ui">
+	<div class="by-sign">
+		<div class="by-sign-name">
+			<span class="by-sign-label">姓名</span>
+			<input type="text" placeholder="请输入姓名"/>
+		</div>
+		<div class="by-sign-phone">
+			<span class="by-sign-label">电话号码</span>
+			<input type="text" placeholder="请输入电话"/>
+		</div>
+		<div id="btnSign" class="by-sign-button">报名</div>
+	</div>
+	<div class="by-return">&lt 返回</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/by-ui.js"></script>
+	<script src="js/carrousel.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		$(function(){
+			$(".by-return").click(function(){
+				window.history.back();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我的支部</title>
+	<link rel="stylesheet" href="css/by-ui.css">
+	<link rel="stylesheet" href="css/carrousel.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="by-ui">
+	<div class="by-user-head">
+		<div class="by-user-modify">点击注册<span class="fa fa-pencil"></span></div>
+		<div class="by-user-info">
+			<div >我的组织生活</div>
+		</div>
+	</div>
+	<div class="by-part-infos">
+		<div class="by-part-count">
+			<div class="by-part-number">0人</div>
+			<div class="by-part-text">组织人数</div>
+		</div>
+		<div class="by-part-info">已开展三会一课0次，已开展主题党日0次</div>
+	</div>
+	<div class="by-part-list">
+		<div class="by-part-list-default">
+			<div class="by-part-list-default-img"><img src="images/img.png"></div>
+			<div class="by-part-list-default-text">您尚未报到，请先去报到。如已报到，组织尚未接收，请耐心等待。</div>
+		</div>
+	</div>
+	<div class="by-return">&lt 返回</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/by-ui.js"></script>
+	<script src="js/carrousel.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		$(function(){
+			$(".by-return").click(function(){
+				window.history.back();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>闵行党建微平台</title>
+	<link rel="stylesheet" href="css/by-ui.css">
+	<link rel="stylesheet" href="css/carrousel.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="by-ui">
+	<h1 style="font-size:20px">learn</h1>
+	<div class="by-placeholder"></div>
+	<div class="by-nav">
+		<a href="index.html" class="by-nav-item">
+			<div class="by-nav-item-img"><img src="images/img.png"/></div>
+			<div class="by-nav-item-txt">党建活动</div>
+		</a>
+		<a href="learn.html" class="by-nav-item selected">
+			<div class="by-nav-item-img"><img src="images/img.png"/></div>
+			<div class="by-nav-item-txt">学习</div>
+		</a>
+		<a href="application.html" class="by-nav-item">
+			<div class="by-nav-item-img"><img src="images/img.png"/></div>
+			<div class="by-nav-item-txt">应用</div>
+		</a>
+		<a href="me.html" class="by-nav-item">
+			<div class="by-nav-item-img"><img src="images/img.png"/></div>
+			<div class="by-nav-item-txt">我</div>
+		</a>
+	</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/by-ui.js"></script>
+	<script src="js/carrousel.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		$(function(){
+			var width = $("body").width();
+			$(".by-nav-item").width(width/$(".by-nav-item").length);
+		});
+	</script>
+</body>
+</html>
