@@ -472,3 +472,28 @@ html, body{
 .by-bottom-save span{
 	font-size:16px;
 }
+
+.by-my-save-titles{
+	width:60%;
+	margin:20px auto;
+	height:40px;
+	line-height:40px;
+	vertical-align:middle;
+	border-radius:20px;
+	border:1px solid #E3170D;
+	overflow:hidden;
+	
+}
+
+.by-my-save-title{
+	width:50%;
+	text-align:center;
+	display:inline-block;
+	color:#E3170D;
+	font-size:16px;
+}
+
+.by-my-save-title.selected{
+	background-color:#E3170D;
+	color:white;
+}

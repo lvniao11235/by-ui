@@ -9,16 +9,11 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body class="by-ui" style="background-color:white">
-	<div class="by-sign">
-		<div class="by-sign-name">
-			<span class="by-sign-label">姓名</span>
-			<input type="text" placeholder="请输入姓名"/>
+	<div class="by-my-save">
+		<div class="by-my-save-titles">
+			<div class="by-my-save-title selected">我的参加</div>
+			<div class="by-my-save-title">我的收藏</div>
 		</div>
-		<div class="by-sign-phone">
-			<span class="by-sign-label">电话号码</span>
-			<input type="text" placeholder="请输入电话"/>
-		</div>
-		<div id="btnSign" class="by-sign-button">报名</div>
 	</div>
 	<div class="by-return">&lt 返回</div>
 	<script src="js/jquery-3.3.1.js"></script>
@@ -29,6 +24,10 @@
 		$(function(){
 			$(".by-return").click(function(){
 				window.history.back();
+			});
+			$(".by-my-save-title").click(function(){
+				$(".by-my-save-title").removeClass("selected");
+				$(this).addClass("selected");
 			});
 		});
 	</script>
